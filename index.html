@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/main.css">
+
+     <!-- Open Graph -->
+     <meta property="og:type" content="website">
+     <meta property="og:title" content="Digital Nomads">
+     <meta property="og:description" content="Argentina presents: New Visa for Digital Nomads">
+     <meta property="og:image" content="https://inprotur-publico.s3.us-east-2.amazonaws.com/imagenes-web/nomades-digitales/logoND__openGraph.jpg">
+     <meta property="og:site_name" content="Digital Nomads Visa">
+     <meta property="og:url" content="https://inprotur-hom.turismo.gob.ar/landing/digital-nomads/">
+    
+     <!-- Favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Digital Nomads</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="35" method="position">
+          <nav class="navbar navbar-custom navbar-expand-lg fixed-top" data-aos="fade-down"  data-aos-mirror="false" id="navbar">
+            <div class="container-fluid px-xl-5">
+                <a class="navbar-brand" href="#home" id="navbar-brand" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><img src="img\logo_digitalNomads-color.svg" class="navbar-img img-fluid" alt="Digital Nomads Logo"></a>
+                
+                <div class="d-flex align-items-center">
+                  
+                  <!-- DROPDOWN -->
+                    <div class="dropdown order-1 order-lg-2 ms-md-5 me-3 me-lg-0">                  
+                      <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img\lang_select_icon.svg" alt="" class="img-fluid d-inline-block me-1"><p class="language-selected d-inline-block mb-0" id="dropdown__selected"></p>
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" id="language-toggler_es"onclick="changeLanguage('es')">español</a></li>
+                        <li><a class="dropdown-item" href="#" id="language-toggler_en" onclick="changeLanguage('en')">english</a></li>
+                        <li><a class="dropdown-item" id="language-toggler_po" onclick="changeLanguage('po')">português</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- MENU -->
+
+                    <div class="order-2 order-lg-1">
+                      <button class="navbar-toggler navbar-custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon navbar-custom-toggler-icon"></span>
+                    </button>  
+                      
+                    </div>
+                  </div>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mx-auto"></div>
+                    <ul class="nav navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link px-4" href="#home" id="nav__home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4" href="#about" id="nav__about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4" href="#benefits" id="nav__benefits">Beneficios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4" href="#requisites" id="nav__requisites">Requisitos</a>
+                      </li>
+                      <li class="nav-item me-5">
+                        <a class="nav-link nav-link-VA px-4" href="https://argentina.travel/" target="_blank"> <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Visit Argentina</span></a>
+                      </li>                     
+                    </ul>                
+                    <div class="mx-auto"></div>
+                  </div> 
+                </div>             
+        </nav>
+
+    <main >
+
+
+        <!-- HOME -->
+        <section class="home" id="home" >
+          <div class="container-fluid h-100 home__container">
+            <div class="row h-100 justify-content-center">
+              
+              <div class="home__welcome col-md-6 pt-3 pt-md-5 pt-lg-5 ps-lg-3 ps-xl-5 pb-md-5 mb-lg-0 mb-n5" data-aos="fade-right" data-aos-once="true">
+                <div class="pt-3 pt-md-5 ps-sm-3 ps-xl-5 ms-xl-3 pb-lg-0 ">
+                  <h1 class="display-4 mb-3 home__heading" id="home__heading">Nueva Visa para <br><span class="purple-span">Nómades Digitales</span></h1>
+                  <p class="h5 mb-4 pb-1 pb-sm-3 home__p pe-lg-5 " id="home__p">Tu oficina ideal se encuentra a tan sólo un par de clicks de distancia. ¡No esperes más!</p>
+                  <a href="https://www.migraciones.gov.ar/radex/inicio-pasos-permiso.html" target="_blank"><button class="button-purple home__button mt-1"  id="home__button">Tramitá tu visa</button></a>
+                </div>          
+              </div>
+
+              <div class="col-md-6 home__image-container">           
+                <div data-aos="fade-left" data-aos-once="true" class="home__image">
+              </div>                
+              </div>                           
+            </div>
+          </div>  
+        </section>
+    
+        <!-- VIDEO -->
+    
+
+        <section class="video" id="video">
+          <div class="container-fluid" data-aos="zoom-in"  data-aos-once="true">
+            <div class="embed-responsive embed-responsive-21by9" id="video__content">             
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="about__image col-xxl-5 col-xl-6 col-10 offset-1 col-md-8 offset-md-2 offset-lg-0 col-lg-6 px-xl-5 pe-lg-5 pb-sm-5 pb-lg-0">
+                  <div class="row pe-lg-5 pe-xl-0 mb-5 mb-sm-2 mb-md-0 g-0">
+                    <div class="col d-flex justify-content-center px-3 px-xl-4"  data-aos="flip-left" data-aos-once="true">
+                      <img src="img\about_person_01.png" alt="" class="mt-5  img-fluid">
+                    </div>
+                    <div class="col d-flex justify-content-center"  data-aos="flip-left" data-aos-once="true"  data-aos-delay="100">
+                      <img src="img\about_person_02.png" alt="" class="mb-5 img-fluid">
+                    </div>
+                    <div class="col d-flex justify-content-center px-3 px-xl-4"  data-aos="flip-left" data-aos-once="true"  data-aos-delay="200">
+                      <img src="img\about_person_03.png" alt="" class="mt-5  img-fluid">
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="offset-xxl-1 col-lg-6 about__content" data-aos="fade-left" data-aos-once="true">
+                    <p class="text-muted about__descriptor" id="about__descriptor">Sobre argentina</p>
+                    <h2 class="h1 about__heading" id="about__heading">Un país donde abundan <br><span class="purple-span">las oportunidades</span></h2>
+                    <p class="h5 about__p" id="about__p">Argentina te espera con ciudades cosmopolitas repletas de espacios para trabajar, ubicadas a pocos kilómetros de incomparables destinos turísticos. Conectividad digital, costo de vida económico y educación y salud públicas: nada te faltará.</p>
+
+                    <div class="mt-5 about__numbers py-4 px-3 mb-2 d-flex justify-content-center w-100">
+                      <div class="d-flex justify-content-around align-items-center w-100">
+                        
+                        <div class="about__number about__number-01 px-1">
+                          <p class="h2 about__number-num mb-1"><span data-count="10" class = "counter">0</span>+</p>
+                          <p class="about__number-data" id="about__number-data-01">Grandes ciudades interconectadas</p>
+                        </div>
+
+                        <div class="about__separator mx-2"></div>
+                
+                        <div class="about__number about__number-02 px-1">
+                          <p class="h2 about__number-num mb-1"><span class = "counter" data-count="300">0</span>+</p>
+                          <p class="about__number-data" id="about__number-data-02">Espacios para coworking</p>
+                        </div>
+
+                        <div class="about__separator mx-2"></div>
+
+                        <div class="about__number">
+                          <p class="h2 about__number-num mb-1"><span data-count="500" class = "counter">0</span></p>
+                          <p class="about__number-data" id="about__number-data-03">USD/mes como costo de vida promedio</p>
+                        </div>
+                      </div>                    
+                    </div>
+                </div>
+              </div>
+            </div>          
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits" id="benefits">
+          <div class="background py-5">
+            <div class="container mt-2">
+              <div class="benefits__title row" data-aos="fade-right" data-aos-once="true">
+                <p class="text-muted benefits__descriptor" id="benefits__descriptor">beneficios de la visa</p>
+                <h2 class="h1 benefits__heading" id="benefits__heading">Viví la experiencia <span class="purple-span">nómade digital en Argentina</span></h2>
+              </div>
+
+              <div class="row g-4 benefits__cards mt-md-4 mt-sm-3">
+                <div class="col-12 col-md-6 col-lg-4 px-xl-4">
+                    <div class="card h-100" data-aos="flip-left" data-aos-once="true">
+                      <div class="card__img">
+                        <img src="img\benefits_01.png" alt="" class="card-img-top img-fluid">
+                        <img src="img\benefits_button_01.svg" alt="" class="card__img-button img-fluid">
+                      </div>
+
+                      <div class="card-body card-body mt-5 mb-4 px-4 px-xl-5">
+                        <h3 class="card-title" id="card-title-01">Promociones únicas</h3>
+                        <p class="card-text" id="card-text-01">Tramitando tu Visa accederás a múltiples beneficios en experiencias gastronómicas y recreativas.</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 px-xl-4">
+                  <div class="card h-100" data-aos="flip-left" data-aos-once="true"  data-aos-delay="150">
+                    <div class="card__img">
+                      <img src="img\benefits_02.png" alt="" class="card-img-top img-fluid">
+                      <img src="img\benefits_button_02.svg" alt="" class="card__img-button img-fluid">
+                    </div>
+
+                    <div class="card-body mt-5 mb-4 px-4 px-xl-5">
+                      <h3 class="card-title" id="card-title-02">Oficinas soñadas</h3>
+                      <p class="card-text" id="card-text-02">Infinidad de destinos en todo el país cuentan con espacios exclusivos para nómadas digitales.</p>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="col-12 col-md-6 col-lg-4 px-xl-4">
+                <div class="card h-100" data-aos="flip-left" data-aos-once="true"  data-aos-delay="300">
+                  
+                  <div class="card__img">
+                    <img src="img\benefits_03.png" alt="" class="card-img-top img-fluid">
+                    <img src="img\benefits_button_03.svg" alt="" class="card__img-button img-fluid">
+                  </div>
+
+                  <div class="card-body mt-5 mb-4 px-4 px-xl-5">         
+                    <h3 class="card-title" id="card-title-03">Trámites sencillos</h3>
+                    <p class="card-text" id="card-text-03">Obtener y renovar tu Visa es simple y rápido. No tendrás que preocuparte por dificultades administrativas.</p>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- REQUISITES -->
+        <section class="requisites mb-5" id="requisites">
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="pt-lg-5 col-lg-5 requisites__content" data-aos="fade-right" data-aos-once="true">
+                <p class="text-muted requisites__descriptor mt-lg-5" id="requisites__descriptor">Requisitos</p>
+                <h2 class="requisites__heading h1" id="requisites__heading">Qué necesitás<br> <span class="purple-span">para obtenerla</span></h2>
+                <p class="h5 requisites__p pe-sm-5" id="requisites__p">Antes de iniciar tu viaje a Argentina deberás gestionarla y tendrá una validez de 180 días, prorrogable a un año.
+                </p>
+              </div>
+
+              <div class="col-lg-7 requisites__cards">
+
+                <div class="py-3 py-md-4 my-4 requisites__card" data-aos="fade-left" data-aos-once="true">
+                  <div class="requisites__card-icon ps-3 ps-md-4">
+                    <img src="img\requisites_button_01.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="requisites__card-data ps-3 ps-md-4 pe-3 pe-sm-4 pe-md-5">
+                    <h3 id="requisites__card-heading-01">Pasaporte vigente</h3>
+                    <p id="requisites__card-p-01">Se te solicitará cuando comiences el trámite a través de la Dirección de Migraciones.</p>
+                  </div>
+                </div>
+
+                <div class="py-3 py-md-4 my-4 requisites__card" data-aos="fade-left" data-aos-once="true" data-aos-delay="100">
+                  <div class="requisites__card-icon ps-3 ps-md-4">
+                    <img src="img\requisites_button_02.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="requisites__card-data ps-3 ps-md-4 pe-3 pe-sm-4 pe-md-5">
+                    <h3 id="requisites__card-heading-02">Ingresos demostrables</h3>
+                    <p id="requisites__card-p-02">Deberás consignar documentación que pruebe la actividad económica que llevas adelante.</p>
+                  </div>
+                </div>
+
+                <div class="py-3 py-md-4 my-4 requisites__card" data-aos="fade-left" data-aos-once="true" data-aos-delay="200">
+                  <div class="requisites__card-icon ps-3 ps-md-4">
+                    <img src="img\requisites_button_03.svg" class="img-fluid" alt="">
+                  </div>
+                  <div class="requisites__card-data ps-3 ps-md-4 pe-3 pe-sm-4 pe-md-5">
+                    <h3 id="requisites__card-heading-03">Documentación</h3>
+                    <p id="requisites__card-p-03">Tu CV, una foto 4x4 y tus datos personales es todo lo que se pedirá.</p>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+           
+  
+            
+          </div>
+          
+        </section>
+
+        <!-- GO SOUTH -->
+
+        <div class="container-fluid goSouth" >
+
+          <div class="px-sm-0 py-2 py-lg-3 goSouth__content" data-aos="fade-in" data-aos-once="true" data-aos-delay="300">
+            <p class="display-3 my-4 my-md-5 px-5 goSouth__title">Argentina <span>cheers you up!</span></p>
+            <a href="https://www.migraciones.gov.ar/radex/inicio-pasos-permiso.html" target="_blank"><button class="mb-4 mb-md-5 button-gradient" id="goSouth__button">Tramitá tu visa</button></a>
+
+            <img src="img\VA_logoHorizontal.svg"  alt="" class="goSouth__VAlogo img-fluid mt-1 mb-3 mb-md-4 mb-lg-5 ">
+          </div>
+       
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="py-sm-5 py-3 footer__main">
+            <div class="container">
+              <div class="row justify-content-center align-items-center">
+
+                <div class="col-10 col-sm-12 offset-lg-0 col-lg-6 col-xl-7 footer__logos pe-lg-5 pb-sm-4 pb-lg-0 mb-sm-0 mb-5 m-sm-0 mt-4">
+                  <div class="row">
+                    <div class="footer__logo-container col-10 offset-1 offset-sm-0 col-sm-6"><img src="img\logo_digitalNomads-blanco.svg" class="img-fluid py-5 py-sm-4 px-lg-3 px-sm-4" alt="Digital Nomads logo"></div>
+                    <div class="footer__logo-container col-10 offset-1 offset-sm-0 col-sm-6"><img src="img\logo_marcaPais.svg" class="img-fluid py-sm-4 pb-5 pt-3 px-lg-3 px-sm-4" alt="Argentina Logo - Marca País"></div>
+                  </div> 
+                </div>
+
+                <div class="col-12 col-sm-10 offset-lg-0 col-lg-6 col-xl-5  footer__links">
+                 
+                  <div class="row ps-lg-3 ps-xl-5 pt-sm-5 pt-lg-0">                 
+                      <div class="col-8 offset-2 offset-sm-0 col-sm-6 align-items-center justify-content-center footer__links-group mb-sm-0 mb-4">
+                        <div>
+                          <h3 class="h5 ms-lg-5 footer__links-title" id="footer__links-title-01">Sitio</h3>
+                          <ul class="ms-lg-5 footer__links-list">
+                            <li class="footer__links-item mt-2"><a href="#about" class="p" id="footer__links-item-01">About</a></li>
+                            <li class="footer__links-item mt-2" ><a href="#benefits" class="p" id="footer__links-item-02">Beneficios</a></li>
+                            <li class="footer__links-item mt-2"  ><a href="#requisites" class="p" id="footer__links-item-03">Requisitos</a></li>
+                          </ul>
+                        </div>        
+                                     
+                    </div>
+                    
+                    <div class="col-12 offset-sm-0 col-sm-6 footer__links-group m-sm-0 p-sm-0 py-3 mb-5">
+                      <div >
+                        <h3 class="h5 footer__links-title" id="footer__links-title-02">Links de interés</h3>        
+                        <ul class="footer__links-list">
+                          <li class="footer__links-item mt-2"><a href="https://argentina.travel/" target="_blank" class="p" id="footer__links-item-04">Visit Argentina</a></li>
+                          <li class="footer__links-item mt-2"><a href="https://www.migraciones.gov.ar/radex/inicio-pasos-permiso.html" target="_blank" class="p" id="footer__links-item-05">Dir. de Migraciones</a></li>
+                          <li class="footer__links-item mt-2"><a href="https://www.argentina.gob.ar/turismoydeportes" target="_blank" class="p" id="footer__links-item-06">Ministerio de Turismo</a></li>
+                        </ul>   
+                      </div>                                                        
+                    </div>               
+                  </div>           
+                </div>
+                  
+                  </div>
+              </div>             
+          </div>
+
+          <div class="footer__secondary py-4">
+            <div class="container my-0">
+              <div class="row align-items-center footer__secondary-logos">
+                <div class="col-10 offset-1 py-sm-0 py-3">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 footer__secondary-img-container">
+                      <img src="img\logo_inprotur.svg" alt="Logo Inprotur" class="img-fluid py-sm-0 py-4 px-lg-0 px-5 px-sm-3">
+                    </div>
+                    <div class="col-12 col-sm-8 footer__secondary-img-container">
+                      <img src="img\logos_minArgentina.svg" alt="Logo Ministerio de Turismo" class="img-fluid py-sm-0 py-4  px-lg-0" >
+                    </div>
+                  </div>                 
+                </div>
+                                    
+              </div>
+            </div>
+          </div>
+            
+        </footer>
+    </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar'
+    })
+    </script> 
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script src="js/counter.js"></script>
+
+    <script src="js/languageSelector.js"></script>
+
+    <script src="js/scroll.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '.navbar'
+      })
+
+      $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+    
+    </script>
+
+    
+</body>
+</html>

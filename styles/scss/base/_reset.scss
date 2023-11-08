@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: scroll;
+    position: relative;
+    padding-top: 2rem;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    
+    padding-top: 8rem;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        padding-top: 4rem;
+     }
+
+     overflow-x: hidden;
+     
+}
+
+a, a::before, a::after, a:visited {
+    text-decoration: none;
+}

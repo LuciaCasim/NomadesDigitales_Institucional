@@ -1,0 +1,92 @@
+.footer {
+
+    &__main {
+        background-color: $dark-purple;
+    }
+
+    &__secondary {
+        background-color: $light-gray;
+        margin-bottom: 0;
+
+        &-img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+
+            @media (max-width: map-get($grid-breakpoints, sm)) {
+
+                .img-fluid {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            
+        }
+    }
+
+    color: white;
+    &__links {
+
+        &-list {
+            list-style: none;
+            padding: 0;
+            font-weight: $medium;
+            
+            a {
+                color: white;
+            }
+        }
+
+        &-item a:hover {
+            color: $green;
+        }
+
+        &-item a:focus {
+            color: $white;
+        }
+
+        &-title {
+            font-weight: $bold;
+            text-transform: uppercase;           
+        }
+
+        &-group {
+            @media (max-width: map-get($grid-breakpoints, sm)) {
+                text-align: center;
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                li {
+                    font-size: 1.125rem;
+                }
+             }
+        }
+
+    }
+    
+
+    &__logos {
+        border-right: solid 1px $white;
+
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            border-right: none;
+            border-bottom: solid 1px $white;
+         }
+    }
+
+    &__logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,32 @@
+.goSouth {
+   padding: 0;
+    background: url("../../img/banner_goSouth.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-attachment: fixed;
+
+   &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   &__title {
+       color: $white;
+       font-weight: $medium;
+       text-align: center;
+       
+
+       span{
+           font-weight: $bold;
+       }
+   }
+
+   &__VAlogo {
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        transform: scale(0.8);    
+      }    
+   }
+}

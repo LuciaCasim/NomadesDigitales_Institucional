@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+h1 {
+    font-weight: $regular;
+    color: $black;
+    // font-size: 3.2rem;
+    line-height: 130%;
+
+
+};
+
+p {
+    font-weight: $regular;
+    // font-size: 1.25rem;
+    line-height: 160%;
+    color: $dark-gray;
+
+    // @media (max-width: map-get($grid-breakpoints, lg)) {
+    //     font-size: 1rem;
+    // }
+}
+
+.text-muted {
+    text-transform: uppercase;
+    font-weight: $semibold;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.6em;
+}
+
+.purple-span {
+        font-weight: $bold;
+        color: $medium-purple;    
+}
+
+.h5 {
+
+        line-height: 160%;
+        @media (max-width: map-get($grid-breakpoints, sm)) {
+           font-size: 1rem;       
+    }
+}
+
+.h1 {
+    line-height: 130%;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-weight: $bold;
+}

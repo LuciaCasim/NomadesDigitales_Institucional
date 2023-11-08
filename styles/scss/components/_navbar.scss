@@ -1,0 +1,145 @@
+.navbar {
+    background-color: $light-purple;
+    padding: 0;
+    z-index: 5;
+  
+    .container-xl {
+        background-color: $light-purple;
+    }
+
+    &-brand {
+        max-width: 40%;
+    }
+
+    &-img {
+        max-width:85%;
+        height: auto;
+
+        @media (max-width: map-get($grid-breakpoints, lg)) {
+            padding: 1rem 0;
+        }
+    }
+
+    .nav-link.active {
+        border-radius: 0;
+        background-color: $dark-purple;
+    }
+
+    .nav-pills .nav-link {
+        border-radius: 0;
+    }
+    
+}
+
+// DROPDOWN
+
+#navbarDropdownMenuLink {   
+    &:hover {
+        background-color: $light-purple;       
+    }
+}
+
+.dropdown {
+    text-transform: uppercase;
+    z-index: 10;
+    
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+       position: absolute;
+       right: 4%;
+       margin-left: 2rem;
+    }
+
+
+    &-menu {
+        background-color: $light-purple;
+        border-style: none;
+        border-radius: 2;
+        box-shadow: 3px 3px 5px rgba(96, 2, 254, 0.16);
+        z-index: 10;
+
+    }
+
+    &-item {
+        font-weight: $medium;
+        text-transform: capitalize;
+        position: relative;
+        display: inline-block;
+        
+        
+        &:hover {
+            background-color: $dark-purple;
+            color: $white;
+        }
+    }
+
+    &-toggle::after {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+.navbar-custom-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(54,0,133, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+
+.navbar-custom-toggler {
+   border-color: $dark-purple;
+   z-index: 15;
+   font-size: 1rem;
+
+   &:focus {
+       box-shadow: none;       
+   }
+
+}
+
+
+.nav-link {
+    padding: 2.375rem; 
+    text-transform: uppercase;
+    color: $black;
+    font-weight: $medium;
+    text-decoration: none;
+    margin-bottom: 0;   
+    font-size: 0.875rem;
+
+    @media (min-width: map-get($grid-breakpoints, xl)) {
+        font-size: 1rem;
+    }
+    
+    
+    &:visited, &:focus {
+        color: $black;
+    }
+
+    &-VA, &-VA::after, &-VA::before, &-VA:focus, &-VA:visited, &-VA:focus  {
+        color: $medium-purple;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $medium-purple;
+        color: $white;
+    }
+
+    
+   
+
+}
+
+.nav-item{
+    padding: 0;
+}
+
+@media (max-width: map-get($grid-breakpoints, lg)) {
+    .navbar .nav-link.active {
+        color: $black;
+        background-color: $light-purple;
+    }
+  }

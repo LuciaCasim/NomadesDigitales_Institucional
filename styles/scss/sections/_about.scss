@@ -1,0 +1,68 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__numbers {
+        background-color: $white;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+
+        &-separator{
+            height: 80%;
+            border-left: 1px solid $medium-purple;
+        }
+    }
+
+    &__separator {
+      position: relative;
+      width: 2px;
+      height: 4rem;
+
+      @media (max-width: map-get($grid-breakpoints, sm)) {
+        height: 3rem;
+      }
+      border-radius: 180px;
+      background-color: $medium-purple;
+    }
+
+    &__number {
+        text-align: center;
+        display: flex column;
+        align-items: center;
+        justify-content: center;
+        max-width: 33%;
+
+        // &-01, &-02 {
+        //   border-right: solid 1px $medium-purple;
+        // }
+    
+
+        &-num {
+            font-weight: $bold;
+            color: $medium-purple;
+        }
+
+        &-data {
+            @media (max-width: map-get($grid-breakpoints, sm)) {
+               font-size: 0.5625rem;
+             }
+
+             @media (min-width: map-get($grid-breakpoints, sm)) {
+                font-size: 0.75rem;
+              }
+
+              @media (min-width: map-get($grid-breakpoints, md)) {
+                font-size: 0.875rem;
+              }
+
+              @media (min-width: map-get($grid-breakpoints, xl)) {
+                font-size: 1rem;
+              }
+
+             margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.benefits{
+    padding-top: 5rem;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        padding-top: 4rem;
+     }
+
+
+    .background{ 
+        @include reverse-light-purple-gradient;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    .card {
+        border-radius: 20px;
+        border-style: none;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+       
+        &__img {
+            z-index: 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            &-button {
+                z-index: 1;
+                position: absolute;
+                transform: translate(-50%, 50%); 
+                bottom:0;
+                left: 50%;
+                
+            }
+        }
+    }    
+
+    .card-img-top {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}

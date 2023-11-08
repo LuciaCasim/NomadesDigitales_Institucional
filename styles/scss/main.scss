@@ -1,0 +1,18 @@
+// BASE
+@import 'base/colors';
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/typography';
+
+// COMPONENTS
+@import 'components/navbar';
+@import 'components/buttons';
+
+// SECTIONS
+@import 'sections/home';
+@import 'sections/video';
+@import 'sections/about';
+@import 'sections/benefits';
+@import 'sections/requisites';
+@import 'sections/goSouth';
+@import 'sections/footer';
